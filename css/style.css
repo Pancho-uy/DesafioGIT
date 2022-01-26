@@ -24,6 +24,7 @@ body
     width: 100%;
     height: 100vh;
 }
+
 /*------------------*/
 /* Menú desplegable */
 /*------------------*/
@@ -447,7 +448,7 @@ body
         height: 6px;
         background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
         background-size: contain;
-        transition: transform 0.4s;
+        transition: transform 0.5;
     }
 
     .acordeon-contenido
