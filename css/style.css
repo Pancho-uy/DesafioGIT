@@ -95,6 +95,28 @@ body
     background-color: #000046;
   }
 
+/* Fondo para la NAVBAR de bootstrap */
+
+  .fondoMio
+  {
+    background: linear-gradient(to right,#000046, #1cb5e0); 
+  }
+
+  .miFormulario
+  {
+    margin-top: 7%;
+  }
+
+  .bordes
+  {
+      border: solid 1px black;
+  }
+
+  .titContacto
+  {
+    background: linear-gradient(to right,#000046, #1cb5e0);
+    font-family: 'Roboto', sans-serif;
+  }
 
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
