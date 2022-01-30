@@ -101,7 +101,7 @@ body
     {
         background: linear-gradient(to right,#000046, #1cb5e0); 
     }
-
+/****************************************************/
     .miFormulario
     {
         margin-top: 7%;
@@ -117,7 +117,7 @@ body
         background: linear-gradient(to right,#000046, #1cb5e0);
         font-family: 'Roboto', sans-serif;
     }
-
+    /* DEFINO LOS ESTILOS DE COLOR DE LINK PARA EL INDEX */
     .LinkBlanco
     {
         color:white;
@@ -132,7 +132,10 @@ body
         font-size: 1.25rem
     }
 
+    
+
     /* Clases para el Mapa de Google en Bootstrap */
+
     .map-container
     {
     overflow:hidden;
