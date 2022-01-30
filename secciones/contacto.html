@@ -11,80 +11,133 @@
         <title>PrinTo - Impresiones ByN, Color, impresion de planos, encuadernados</title>
     </head>
     <body>
+      <!-- Inicio MENU-->
+      <nav class="navbar navbar-expand-lg navbar-dark fondoMio">
+        <div class="container-fluid">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
+            <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+            <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+          </svg>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/secciones/nosotros.html">¿Quiénes Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/secciones/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/secciones/faq.html">F.A.Q.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/secciones/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin MENU-->
       <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg navbar-dark fondoMio">
-            <div class="container-fluid">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
-                <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
-                <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-              </svg>  
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/nosotros.html">¿Quiénes Somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/faq.html">F.A.Q.</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/contacto.html">Contacto</a>
-                  </li>
-                </ul>
+        <div class="row">
+          <h2 class="col fondoMio text-white">CONTACTO</h2>
+        </div>
+      </div>
+      <!-- FORMULARIO -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-lg-5 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <p>Envíenos su consulta.</p>
+              <div class="md-form">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="form-name" class="form-control">
+                <label for="form-name">Nombre</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="form-email" class="form-control">
+                <label for="form-email">Email</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form-Subject" class="form-control">
+                <label for="form-Subject">Consulta</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                <textarea id="form-text" class="form-control md-textarea" rows="5"></textarea>
+                <label for="form-text"> </label>
+              </div>
+              <div class="text-center mt-4">
+                <button class="btn btn-outline-primary">ENVIAR</button>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      <!----- Fin FORMULARIO  ----->
+      <!----          MAPA                     -->
+      <div class="col-lg-6">
+        <div id="map-container-google-11" class="z-depth-1-half map-container" style="height: 400px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0420084737134!2d-56.18813258542409!3d-34.90539528038238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cb68dbab7d%3A0x9eb00cf4d0e29b18!2sAv.%2018%20de%20Julio%201401%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1640285940782!5m2!1ses-419!2suy"
+            frameborder="0" style="border:1" allowfullscreen></iframe>
+        </div>
       </div>
-
-        <main class="contactoGrid">
-          <h1 class="contacto">Contacto</h1>
-          <section class="columnaDerecha">
-            <section class="datosContacto">
-                18 de Julio 1401<br>
-                Montevideo, 11200<br>
-                Uruguay<br>
-                tel +598 2999 9999<br>
-                <br>
-            </section>
-          </section>
-            <section class="rrss">
-                <img class="icono-rss" src="../img/whatsapp.png" alt=""><a href="https://wa.me/+59899999999">+598 99 999 999</a><br>
-                <img class="icono-rss" src="../img/twitter.png" alt=""><a href="https://twitter.com/Printo">PrinTo</a><br>
-                <img class="icono-rss" src="../img/instagram.png" alt=""><a href="https:instagram.com/printo">@PrinTo</a><br>
-            </section>       
-            <section class="googlemaps">
-                  <iframe class="mapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0420084737134!2d-56.18813258542409!3d-34.90539528038238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cb68dbab7d%3A0x9eb00cf4d0e29b18!2sAv.%2018%20de%20Julio%201401%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1640285940782!5m2!1ses-419!2suy" allowfullscreen="" loading="lazy"></iframe>
-            </section>     
-          <section class="miFormulario">
-            <form class="formulario", action="">
-              <h2 class="contacto">Contáctenos:</h2><br>
-              <section class="textosFormulario">
-                <label class="campo", for = "nombre">Nombre:</label><br>
-                <label class="campo" for = "apellido">Apellido:</label><br>
-                <label class="campo" for = "email">email:</label><br>
-                <label class="campo" for = "mensaje"> Mensaje:</label><br>
-              </section>
-              <section>
-                <input class="input-formulario" type="text" name="nombre" placeholder="Juan"><br>
-                <input class="input-formulario" type="text" name="apellido" placeholder="Pérez"><br>
-                <input class="input-formulario" type="email" name="email" placeholder="algo@dominio.com"><br>
-                <textarea class="input-formulario" name="mensaje" cols=55 rows=15></textarea><br>
-                <input  class="input-formulario" type="submit" value="Envio comentarios">
-              </section>
+      <!----         FIN  MAPA                 -->
+    <footer>
+      <div class="container-fluid fondoMio">
+        <div class="row fondoMio">
+            <div class="col">
               <br>
-            </form>
-          </section>
-      </main>
-    </body>
-    <footer class="pie">
-      <h6>&#169 2021 PrinTo</h6>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
+                <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+              </svg>
+              <h2 class="text-white">PrinTo</h2>                  
+            </div>
+            <div class="col">
+              <br>
+              <h6 class="text-white">
+                18 de Julio 1401<br>
+                Montevideo, 11200, <br>
+                Uruguay<br>
+                Teléfonos: tel +598 2999 9999.<br>
+                info@printo.com.uy<br>
+              </h6>
+            </div>
+            <div class="col fondoMio d-flex align-items-center">
+              <div class="pull-right">
+                <h6 class="text-white lead ">ENCUENTRANOS EN LAS REDES</h6>
+                <div class="container">
+                  <div class="row">
+                    <div class="col d-flex align-items-center">
+                      <a class="LinkBlanco" href="https://wa.me/+59899999999"><img src="/img/whatsapp.png"><h5 class="text-white">Whatsapp</h5></a>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                      <a class="LinkBlanco" href="https://twitter.com/Printo"><img src="/img/twitter.png"><h5 class="text-white">Twitter</h5></a>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                      <a class="LinkBlanco" href="https://instagram.com/printo"><img src="/img/instagram.png"><h5 class="text-white">Instagram</h5></a>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="row"> <h6 class="text-muted text-center fondoMio text-white"> &#169 2021 PrinTo</h6></div>
+      </div>  
     </footer>
-    </html>
+<!-- Scripts para Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------->
+   </body>  
+</html>
