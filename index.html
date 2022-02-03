@@ -3,7 +3,7 @@
   <head> 
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Segunda entrega DISEÑO WEB (con CSS) - CODERHOUSE">
+    <meta name="description" content="Francisco Cilbeti - DISEÑO WEB - CODERHOUSE">
     <meta name="keywords" content="HTML">
     <meta name="author" content="Francisco Cilbeti">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -12,7 +12,7 @@
   </head>  
   <body>
       <!-- Inicio MENU-->
-      <nav class="navbar navbar-expand-lg navbar-dark fondoMio">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top fondoMio">
         <div class="container-fluid">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
             <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
@@ -39,11 +39,35 @@
                 <a class="nav-link" href="/secciones/contacto.html">Contacto</a>
               </li>
             </ul>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">
+              INGRESAR
+            </button>
           </div>
         </div>
       </nav>
       <!-- Fin MENU-->
-
+      
+      <!-- Modal de aviso de login-->
+      <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Área de Clientes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body"> 
+              El ingreso al área de Clientes está en mantenimiento
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN DEL MODAL-->  
+      <div class="logoPrinTo">
+        <img class="animaLogo" src="img/logo.jpg">
+      </div>     
       <!-- Arranca cuerpo del INDEX con carrusel -->
 
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -87,8 +111,8 @@
 
     <!-- ACA SE TERMINA EL CARRUSEL-->
     <hr>
-    <div class="container-fluid d-flex justify-content-center">
-      <iframe class="videoPortada" src="https://www.youtube.com/embed/r6ve2YsmBCY?autoplay=1&mute=1&loop=1&controls=0&modestbranding=0&playlist=r6ve2YsmBCY"></iframe>
+    <div>
+
     </div>
     <footer>
       <div class="container-fluid fondoMio">

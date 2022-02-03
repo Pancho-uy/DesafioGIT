@@ -102,6 +102,102 @@ body
         background: linear-gradient(to right,#000046, #1cb5e0); 
     }
 /****************************************************/
+    .logoPrinTo
+    {
+        margin: 5% 0 0 0;
+    }
+    .secciones
+    {
+        margin: 3% 0 0 0;
+    }
+
+/* ANIMACIONES SEGUNDA ENTREGA PROYECTO FINAL */
+
+    .seccionAnima 
+    {
+        animation-name: seccion;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* KEYFRAME = Linea de tiempo */
+    @keyframes seccion 
+    {
+        from
+        {
+           transform: translateX(-12%); 
+           opacity: 0;
+        }
+        to
+        {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .animaLogo 
+    {
+        animation-name: logoanimado;
+        animation-iteration-count: 1;
+        animation-duration: 12s;
+        animation-delay: 3s;
+    }
+
+    @keyframes logoanimado 
+    {
+        0%
+        {
+        transform: translate(0);
+        }
+        30% 
+        {
+            transform: translate(100vw);
+        }
+        50% 
+        {
+            transform: translate(0);
+        }
+        75% 
+        {
+            transform: translate(100vw);
+        }
+        100%
+        {
+        transform: translate(0);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .miFormulario
     {
         margin-top: 7%;
@@ -152,6 +248,60 @@ body
     width:80%;
     position:absolute;
     }
+
+/* Scroll de Texto para nosotros.html */
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
