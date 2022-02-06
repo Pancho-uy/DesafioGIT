@@ -33,7 +33,7 @@ body
 
 .iconoMenu
 {
-    width:35px,;
+    width:35px;
     height:35px;
 }
 
@@ -220,49 +220,6 @@ body
     position:absolute;
     }
 
-/* Scroll de Texto para nosotros.html */
-    #scroll-container 
-    {
-    border: 3px solid black;
-    border-radius: 5px;
-    overflow: hidden;
-    }
-  
-  #scroll-text 
-    {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        
-        -moz-animation: my-animation 15s linear infinite;
-        -webkit-animation: my-animation 15s linear infinite;
-        animation: my-animation 15s linear infinite;
-    }
-  
-  /* Firefox */
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-}
 
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
@@ -528,7 +485,7 @@ body
         width:80vw;
         text-align: left;
         float:left;
-        padding: 0,5vw;
+        padding: 0.5vw;
     }
 
     .textoServicios2
@@ -538,7 +495,7 @@ body
         width:80vw;
         text-align: left;
         float:left;
-        padding: 0,5vw;
+        padding: 0.5vw;
     }
 
     .textoServicios3
@@ -548,12 +505,12 @@ body
         width:80vw;
         text-align: left;
         float:left;
-        padding: 0,5vw;
+        padding: 0.5vw;
     }
 
     .imgServicios1
     {
-        display:none;;
+        display:none;
 
     }
 
@@ -580,7 +537,7 @@ body
         font-family: 'Roboto Mono', monospace;
         background: linear-gradient(to right,#000046, #1cb5e0);
         max-width: 95%;
-        box-shadow: 0 0 10 rgb(39, 35, 35);
+        box-shadow: 1px 1px 1px 10px rgb(39, 35, 35);
         border-radius: 0px;
         overflow: hidden;
     }
@@ -614,7 +571,7 @@ body
         height: 6px;
         background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
         background-size: contain;
-        transition: transform 0.5;
+        transition-delay: 0.5s;
     }
 
     .acordeon-contenido
@@ -652,7 +609,7 @@ body
 
     .columnaDerecha
     {
-        float:relative;
+        float:right;
     }
 
     .datosContacto
@@ -689,7 +646,7 @@ body
         height:auto;
         margin-top:30px;
         margin-left:20px;
-        box-shadow: 2% 2% 1% grey;
+        box-shadow: 5px 5px 2px grey;
     }
 
     .miFormulario
@@ -1024,7 +981,7 @@ body
     font-family: 'Roboto Mono', monospace;
     background: linear-gradient(to right,#000046, #1cb5e0);
     max-width: 95%;
-    box-shadow: 0 0 10 rgb(39, 35, 35);
+    box-shadow: 1px 1px 10px rgb(39, 35, 35);
     border-radius: 0px;
     overflow: hidden;
 }
@@ -1107,12 +1064,12 @@ body
 
     .columnaDerecha
     {
-        float:relative;
+        float:right;
     }
 
     .datosContacto
     {
-        grid-area:datos-contacto
+        grid-area:datos-contacto;
         float: left;
         font-family: 'Roboto Mono', monospace;
         padding:2%;
@@ -1188,7 +1145,7 @@ body
         font-family: 'Roboto Mono', monospace;
         background: linear-gradient(to right,#000046, #1cb5e0);
         max-width: 95%;
-        box-shadow: 0 0 10 rgb(39, 35, 35);
+        box-shadow: 0px 0px 10px rgb(39, 35, 35);
         border-radius: 0px;
         overflow: hidden;
     }
@@ -1351,7 +1308,6 @@ body
         width:578px;
         height:92px;
         /*margin-left:10%;*/
-        box-align:"middle"
     }
     .imgCabeceraServ
     {
@@ -1359,7 +1315,6 @@ body
         width:578px;
         height:92px;
         /*margin-left:10%;*/
-        box-align:"middle"
     }
     
 /* Caja con sombra  */
@@ -1420,7 +1375,7 @@ body
 
    .pesonalMovile
     {
-        display none;
+        display: none;
     }
 
     /* -- Formateo tabla SERVICIOS -- */
@@ -1449,7 +1404,7 @@ body
         display: inline-block; 
         float:left;
         padding:30px;
-        margin 100px 0 0 0 
+        margin: 100px 0px 0px 0px; 
     }
 
     .textoServicios2
@@ -1460,7 +1415,7 @@ body
         text-align: right;
         display: inline-block; 
         padding:30px;
-        margin 100px 0 0 0 
+        margin: 100px 0px 0px 0px; 
     }
 
     .textoServicios3
@@ -1472,7 +1427,7 @@ body
         display: inline-block; 
         float:left;
         padding:30px;
-        margin 100px 0 0 0 
+        margin: 100px 0px 0px 0px; 
     }
 
     .imgServicios1
@@ -1522,7 +1477,7 @@ body
 
     .columnaDerecha
     {
-        float:relative;
+        float:right;
     }
 
     .datosContacto
@@ -1604,7 +1559,7 @@ body
         font-family: 'Roboto Mono', monospace;
         background: linear-gradient(to right,#000046, #1cb5e0);
         max-width: 55%;
-        box-shadow: 0 0 10 rgb(39, 35, 35);
+        box-shadow: 0px 0px 10px rgb(39, 35, 35);
         border-radius: 0px;
         overflow: hidden;
     }
