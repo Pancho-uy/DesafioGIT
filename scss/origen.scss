@@ -1,0 +1,40 @@
+/* hola, esto es una prueba a ver si el nodemon y watch-css funcionan */
+
+@import "reseteo";
+@import "colores";
+
+.fondoMio{
+  background: $degrade;
+}
+.bordes{ 
+    border: solid 1px $negro
+}
+.titContacto {
+    background: $degrade;
+    font-family: 'Roboto', sans-serif;
+}
+.LinkBlanco{ 
+    color: $blanco;
+    text-decoration: none; 
+    font-size: 1.25rem;
+}
+.LinkNegro{
+    color: $negro; 
+    text-decoration: none; 
+    font-size: 1.25rem;
+}
+/* Animacion */
+
+.seccionAnima {
+	animation-name: seccion;
+	animation-iteration-count: 1; 
+	animation-duration: 3s ;
+	animation-delay: 0s ;
+}
+@keyframes seccion{
+  from{
+  transform: translateX(-12%);
+  opacity:0; }
+  to{
+  transform: translateX(0);
+  opacity:1;}}
