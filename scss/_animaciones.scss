@@ -1,0 +1,13 @@
+/* Animacion */
+
+.seccionAnima {
+	animation-name: seccion;
+	animation-iteration-count: 1; 
+	animation-duration: 3s ;
+	animation-delay: 0s;}
+    @keyframes seccion{
+      from{transform: translateX(-12%);
+      opacity:0; }
+      to{transform: translateX(0);
+      opacity:1;}
+}

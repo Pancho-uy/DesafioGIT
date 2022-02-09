@@ -1,4 +1,5 @@
 /* hola, esto es una prueba a ver si el nodemon y watch-css funcionan */
+/* Importo de los partials el proyecto */
 * {
   margin: 0;
   padding: 0;
@@ -38,3 +39,52 @@
   to {
     transform: translateX(0);
     opacity: 1; } }
+
+/* ACORDEON PARA FAQ */
+.contenedorAcordeon {
+  grid-area: accordion; }
+
+.acordeon {
+  margin: 0 0 1% 2%;
+  font-family: 'Roboto Mono', monospace;
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  max-width: 95%;
+  box-shadow: 1px 1px 1px 10px #272323;
+  border-radius: 0px;
+  overflow: hidden; }
+
+.acordeon_etiqueta {
+  padding: 1% 1%;
+  display: block;
+  color: white;
+  font-weight: 350;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s; }
+  .acordeon_etiqueta:hover {
+    background: #2a2255;
+    color: white; }
+  .acordeon_etiqueta::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition-delay: 0.5s; }
+
+.acordeon-contenido {
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  color: white;
+  margin-left: 2%;
+  display: none; }
+
+.acordeon_opcion {
+  display: none; }
+  .acordeon_opcion:checked ~ .acordeon-contenido {
+    display: block; }
+  .acordeon_opcion:checked ~ .acordeon_etiqueta::after {
+    transform: translateY(-50%) rotate(0.5turn); }

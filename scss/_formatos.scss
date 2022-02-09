@@ -1,0 +1,21 @@
+@import "colores";
+.fondoMio{
+    background: $degrade;
+  }
+  .bordes{ 
+      border: solid 1px $negro
+  }
+  .titContacto {
+      background: $degrade;
+      font-family: 'Roboto', sans-serif;
+  }
+  .LinkBlanco{ 
+      color: $blanco;
+      text-decoration: none; 
+      font-size: 1.25rem;
+  }
+  .LinkNegro{
+      color: $negro; 
+      text-decoration: none; 
+      font-size: 1.25rem;
+  }
