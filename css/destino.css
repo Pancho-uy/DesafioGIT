@@ -8,13 +8,6 @@
 .fondoMio {
   background: linear-gradient(to right, #000046, #1cb5e0); }
 
-.bordes {
-  border: solid 1px black; }
-
-.titContacto {
-  background: linear-gradient(to right, #000046, #1cb5e0);
-  font-family: 'Roboto', sans-serif; }
-
 .LinkBlanco {
   color: white;
   text-decoration: none;
@@ -32,13 +25,13 @@
   animation-duration: 3s;
   animation-delay: 0s; }
 
-@keyframes seccion {
-  from {
-    transform: translateX(-12%);
-    opacity: 0; }
-  to {
-    transform: translateX(0);
-    opacity: 1; } }
+  @keyframes seccion {
+    from {
+      transform: translateX(-12%);
+      opacity: 0; }
+    to {
+      transform: translateX(0);
+      opacity: 1; } }
 
 /* ACORDEON PARA FAQ */
 .contenedorAcordeon {
@@ -88,3 +81,5 @@
     display: block; }
   .acordeon_opcion:checked ~ .acordeon_etiqueta::after {
     transform: translateY(-50%) rotate(0.5turn); }
+
+/* */
