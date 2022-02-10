@@ -524,8 +524,9 @@ body
         display:none;
 
     }
+
     /* ACORDEON de las FAQ (CELULARES) */
-    
+ /*   
 
     .contenedorAcordeon
     {
@@ -597,7 +598,7 @@ body
     {
         transform: translateY(-50%) rotate(0.5turn);
     }
-
+*/
     .contacto
     {
         grid-area:tit-contacto;
