@@ -1,10 +1,5 @@
 /* hola, esto es una prueba a ver si el nodemon y watch-css funcionan */
 /* Importo de los partials el proyecto */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
 .fondoMio {
   background: linear-gradient(to right, #000046, #1cb5e0); }
 
@@ -25,32 +20,52 @@
   animation-duration: 3s;
   animation-delay: 0s; }
 
-  @keyframes seccion {
-    from {
-      transform: translateX(-12%);
-      opacity: 0; }
-    to {
-      transform: translateX(0);
-      opacity: 1; } }
+@keyframes seccion {
+  from {
+    transform: translateX(-12%);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+/* Implementacion con Mixin acordeon FAQ */
+/* MAP PARA LOS COLORES DE LAS RRSS */
+.linkRs-twitter {
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.25rem; }
+
+.linkRs-whatsapp {
+  color: green;
+  text-decoration: none;
+  font-size: 1.25rem; }
+
+.linkRs-instagram {
+  color: red;
+  text-decoration: none;
+  font-size: 1.25rem; }
 
 /* ACORDEON PARA FAQ */
+/* Esta parte se implemento con @mixin y @include */
+/****************************************************************************************/
 .contenedorAcordeon {
-  grid-area: accordion; }
+  grid-area: acordion; }
 
 .acordeon {
   margin: 0 0 1% 2%;
-  font-family: 'Roboto Mono', monospace;
   background: linear-gradient(to right, #000046, #1cb5e0);
   max-width: 95%;
-  box-shadow: 1px 1px 1px 10px #272323;
+  box-shadow: 1 1 1 10 #272323;
   border-radius: 0px;
+  font-family: 'Roboto Mono', monospace;
   overflow: hidden; }
 
 .acordeon_etiqueta {
   padding: 1% 1%;
-  display: block;
   color: white;
-  font-weight: 350;
+  font-weight: 250;
+  transition: background 0.1s;
+  display: block;
   cursor: pointer;
   position: relative;
   transition: background 0.1s; }
@@ -69,6 +84,7 @@
     background-size: contain;
     transition-delay: 0.5s; }
 
+/****************************************************************************************/
 .acordeon-contenido {
   background: linear-gradient(to right, #000046, #1cb5e0);
   color: white;

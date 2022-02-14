@@ -1,60 +1,41 @@
+@import "maps_mixin_extend";
+
 /* ACORDEON PARA FAQ */
+/* Esta parte se implemento con @mixin y @include */ 
+
+/****************************************************************************************/ 
 
 .contenedorAcordeon {
-    grid-area: accordion;
+    @include areaAcordeon(acordion);
   }
   
   .acordeon {
-    margin: 0 0 1% 2%;
-    font-family: 'Roboto Mono', monospace;
-    background: $degrade;
-    max-width: 95%;
-    box-shadow: 1px 1px 1px 10px rgb(39, 35, 35);
-    border-radius: 0px;
-    overflow: hidden;
+   @include acordeon (0,0,1%,2%,1,1,1,10,rgb(39, 35, 35),0px, 95%);
+   font-family: 'Roboto Mono', monospace;
+   overflow: hidden;
   }
   
   .acordeon_etiqueta {
-    padding: 1% 1%;
+    @include acordeon-etiq (1%,1%,250,0.1s,50%,-50%,20px,12px,6px,0.5s);
     display: block;
-    color: $blanco;
-    font-weight: 350;
     cursor: pointer;
     position: relative;
     transition: background 0.1s;
-      &:hover {
-        background: $violeta;
-        color: $blanco;
-    }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          right: 20px;
-          width: 12px;
-          height: 6px;
-          background-image: url($flechita);
-          background-size: contain;
-          transition-delay: 0.5s;
-    }
+     
   }
-  
+  /****************************************************************************************/ 
   .acordeon-contenido {
     background: $degrade;
     color: $blanco;
     margin-left: 2%;
     display: none;
   }
-  
   .acordeon_opcion {
     display: none;
-  
     &:checked ~ {
       .acordeon-contenido {
         display: block;
       }
-  
       .acordeon_etiqueta::after {
         transform: translateY(-50%) rotate(0.5turn);
       }

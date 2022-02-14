@@ -1,0 +1,57 @@
+// Map y Mixin para la entrega SASS + SEO
+
+/* Implementacion con Mixin acordeon FAQ */ 
+
+@mixin areaAcordeon ($gridarea){
+    grid-area: $gridarea
+  }
+
+@mixin acordeon ($mArriba, $mDer, $mAbajo, $mIzq, $sArriba, $sDer, $sAbajo, $sIzq, $sombra, $radio, $anchoMax) {
+    margin: $mArriba $mDer $mAbajo $mIzq;
+    background: $degrade;
+    max-width: $anchoMax;
+    box-shadow: $sArriba $sDer $sAbajo $sIzq $sombra;
+    border-radius: $radio;  
+}
+
+
+@mixin acordeon-etiq ($pad1, $pad2, $pesoFont,$tranFondo, $arriba, $desplazaY,$der,$ancho,$alto,$pausa) 
+{
+padding: $pad1 $pad2;
+color: $blanco;
+font-weight: $pesoFont;
+transition: background $tranFondo;
+  &:hover {
+    background: $violeta;
+    color: $blanco;
+  }
+      &::after {
+        content: "";
+        position: absolute;
+        top: $arriba;
+        transform: translateY($desplazaY);
+        right: $der;
+        width: $ancho;
+        height: $alto;
+        background-image: url($flechita);
+        background-size: contain;
+        transition-delay: $pausa;
+  }
+}
+
+/* MAP PARA LOS COLORES DE LAS RRSS */
+
+$rs-colores: (
+    twitter: $colorTwitter,
+    whatsapp:  $colorWhatsapp,
+    instagram: $colorInstagram
+);
+
+@each $redSoc, $colorLinkRs in $rs-colores {
+  .linkRs-#{$redSoc} {
+    color: $colorLinkRs;
+    text-decoration: none; 
+    font-size: 1.25rem;
+  }
+}
+
