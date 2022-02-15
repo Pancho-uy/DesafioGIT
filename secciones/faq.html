@@ -3,13 +3,15 @@
     <head> 
       <meta charset="utf-8"> 
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta name="description" content="Francisco Cilbeti - DISEÑO WEB - CODERHOUSE">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Francisco Cilbeti">
       <link rel="stylesheet" href="../bootstrap/bootstrap.css">
       <link rel="stylesheet" href="../css/style.css"> <!-- ESTILOS PROPIOS-->
+      <link rel="stylesheet" href="../css/destino.css"> <!-- ESTILOS COMPILADOS DESDE SASS -->
       <title>PrinTo - Impresiones ByN, Color, impresiónes de planos, encuadernados</title>
+      <meta name="description" content="PrinTo, nos especializamos en impresión láser de alto volumen y encuadernaciónes, también copias y digitalización de planos.">
     </head> 
+
     <body>
       <div class="container-fluid">
         <!-- Inicio MENU-->
@@ -68,76 +70,74 @@
         <img class="img-responsive w-100" src="../img/faq_1.jpg">
       <!-- Aca empieza el Acordeon-->
       <br>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Pregunta 1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis excepturi repellat expedita unde aliquid ipsa
-              cum sunt saepe nulla beatae, maiores amet eaque tempore enim hic ab perferendis cumque dolor!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-              doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-            </div>
-          </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                aria-expanded="false" aria-controls="collapseTwo">
-                Pregunta 2
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-                doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-                doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
-                Pregunta 3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ex tempora, assumenda tempore earum accusamus
-                expedita corporis, excepturi nobis delectus, asperiores ducimus libero rerum magnam quibusdam pariatur ullam nam
-                quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-                doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-              </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-              aria-expanded="false" aria-controls="collapseThree">
-              Pregunta 4
-            </button>
-          </h2>
-          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-                doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis officiis doloremque, sed maiores, ea
-                doloribus neque commodi autem perferendis iste vel illo dolorem culpa aut. Vero, reiciendis? Laboriosam, eveniet.
-            </div>
-          </div>
-        </div>
-      </div>
+      <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="faq1" class="acordeon_opcion" >
+        <label for="faq1" class="acordeon_etiqueta">Pregunta 1</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+          </p>
+        </section>
+    </section>
+    <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="faq2" class="acordeon_opcion" >
+        <label for="faq2" class="acordeon_etiqueta">Pregunta 2</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+          </p>
+        </section>
+      </section>      
+    <section class="acordeon">
+      <input type="checkbox" name="acordeon-faq" id="faq3" class="acordeon_opcion" >
+      <label for="faq3" class="acordeon_etiqueta">Pregunta 3</label>
+      <section class="acordeon-contenido">
+        <p class="parrafos">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+          explicabo ipsa hic, quaerat alias?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+          explicabo ipsa hic, quaerat alias?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+          explicabo ipsa hic, quaerat alias?
+        </p>
+      </section>        
+    </section>
+    <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="faq4" class="acordeon_opcion" >
+        <label for="faq4" class="acordeon_etiqueta">Pregunta 4</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
+            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
+            explicabo ipsa hic, quaerat alias?
+          </p>
+        </section>          
+    </section>
       <br>
       <br>
       <br>
@@ -170,13 +170,13 @@
               <div class="container">
                 <div class="row">
                   <div class="col d-flex align-items-center">
-                    <a class="LinkBlanco" href="https://wa.me/+59899999999"><img src="../img/whatsapp.png"><h5 class="text-white">Whatsapp</h5></a>
+                    <a class="linkRs-whatsapp" href="https://wa.me/+59899999999"><img src="../img/whatsapp.png"><h5 class="linkRs-whatsapp">Whatsapp</h5></a>
                   </div>
                   <div class="col d-flex align-items-center">
-                    <a class="LinkBlanco" href="https://twitter.com/Printo"><img src="../img/twitter.png"><h5 class="text-white">Twitter</h5></a>
+                    <a class="linkRs-twitter" href="https://twitter.com/Printo"><img src="../img/twitter.png"><h5 class="linkRs-twitter">Twitter</h5></a>
                   </div>
                   <div class="col d-flex align-items-center">
-                    <a class="LinkBlanco" href="https://instagram.com/printo"><img src="../img/instagram.png"><h5 class="text-white">Instagram</h5></a>
+                    <a class="linkRs-instagram" href="https://instagram.com/printo"><img src="../img/instagram.png"><h5 class="linkRs-instagram">Instagram</h5></a>
                   </div>
                 </div>
                 <br>

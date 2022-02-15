@@ -1,0 +1,43 @@
+@import "maps_mixin_extend";
+
+/* ACORDEON PARA FAQ */
+/* Esta parte se implemento con @mixin y @include */ 
+
+/****************************************************************************************/ 
+
+.contenedorAcordeon {
+    @include areaAcordeon(acordion);
+  }
+  
+  .acordeon {
+   @include acordeon (0,0,1%,2%,1,1,1,10,rgb(39, 35, 35),0px, 95%);
+   font-family: 'Roboto Mono', monospace;
+   overflow: hidden;
+  }
+  
+  .acordeon_etiqueta {
+    @include acordeon-etiq (1%,1%,250,0.1s,50%,-50%,20px,12px,6px,0.5s);
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+     
+  }
+  /****************************************************************************************/ 
+  .acordeon-contenido {
+    background: $degrade;
+    color: $blanco;
+    margin-left: 2%;
+    display: none;
+  }
+  .acordeon_opcion {
+    display: none;
+    &:checked ~ {
+      .acordeon-contenido {
+        display: block;
+      }
+      .acordeon_etiqueta::after {
+        transform: translateY(-50%) rotate(0.5turn);
+      }
+    }
+  }
