@@ -39,10 +39,10 @@ transition: background $tranFondo;
   }
 }
 
-/* MAP PARA LOS COLORES DE LAS RRSS */
+/* MAP PARA LOS COLORES DE LAS RRSS EN EL FOOTER */
 
 $rs-colores: (
-    twitter: $colorTwitter,
+    twitter:   $colorTwitter,
     whatsapp:  $colorWhatsapp,
     instagram: $colorInstagram
 );
@@ -54,4 +54,3 @@ $rs-colores: (
     font-size: 1.25rem;
   }
 }
-
