@@ -29,7 +29,8 @@
     opacity: 1; } }
 
 /* Implementacion con Mixin acordeon FAQ */
-/* MAP PARA LOS COLORES DE LAS RRSS */
+/* MAP PARA LOS COLORES DE LAS RRSS EN EL FOOTER */
+/*                                               */
 .linkRs-twitter {
   color: yellow;
   text-decoration: none;
