@@ -230,7 +230,6 @@
         font-family: 'Roboto Mono', monospace;
         background: linear-gradient(to right,#000046, #1cb5e0);
         max-width: 95%;
-        /*box-shadow: 1px 1px 1px 10px rgb(39, 35, 35);*/
         border-radius: 0px;
         overflow: hidden;
     }

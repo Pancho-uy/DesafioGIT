@@ -1,13 +1,48 @@
 /* Animacion */
 
 .seccionAnima {
-	animation-name: seccion;
-	animation-iteration-count: 1; 
-	animation-duration: 3s ;
-	animation-delay: 0s;}
-    @keyframes seccion{
-      from{transform: translateX(-12%);
-      opacity:0; }
-      to{transform: translateX(0);
-      opacity:1;}
+  animation-name: seccion;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+@keyframes seccion {
+  from {
+    transform: translateX(-12%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animaLogo {
+  animation-name: logoanimado;
+  animation-iteration-count: 1;
+  animation-duration: 12s;
+  animation-delay: 3s;
+}
+
+@keyframes logoanimado {
+  0% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translate(100vw);
+  }
+
+  50% {
+    transform: translate(0);
+  }
+
+  75% {
+    transform: translate(100vw);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }

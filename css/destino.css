@@ -28,6 +28,24 @@
     transform: translateX(0);
     opacity: 1; } }
 
+.animaLogo {
+  animation-name: logoanimado;
+  animation-iteration-count: 1;
+  animation-duration: 12s;
+  animation-delay: 3s; }
+
+@keyframes logoanimado {
+  0% {
+    transform: translate(0); }
+  30% {
+    transform: translate(100vw); }
+  50% {
+    transform: translate(0); }
+  75% {
+    transform: translate(100vw); }
+  100% {
+    transform: translate(0); } }
+
 /* Implementacion con Mixin acordeon FAQ */
 /*                                               */
 /* MAP PARA LOS COLORES DE LAS RRSS EN EL FOOTER */
