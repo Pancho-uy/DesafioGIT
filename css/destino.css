@@ -123,3 +123,19 @@
     transform: translateY(-50%) rotate(0.5turn); }
 
 /* */
+
+/* CLASES PARA EL MAPA DE CONTACTO */
+
+.mapa-google{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .mapa-google iframe{
+  left:0;
+  top:0;
+  height:80%;
+  width:80%;
+  position:absolute;
+  }

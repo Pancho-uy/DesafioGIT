@@ -10,7 +10,7 @@
     <title>PrinTo - ¡Contáctenos!</title>
     <meta name="description" content="PrinTo, pagina de contacto y ubicación">
   </head> 
-  <body>
+  <body background="../img/fondo_papel.png"> 
     <nav class="navbar navbar-expand-lg navbar-dark fondoMio">
       <div class="container-fluid">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
@@ -42,31 +42,13 @@
       </div>
     </nav>
     <!-- Fin MENU-->
-    <!-- Modal de aviso de login-->
-    <div class="modal fade" id="loginmodal" data-bs-backdrop="modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="etiqueta" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="etiqueta">Área de Clientes</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body"> 
-            El ingreso al área de Clientes está en mantenimiento
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FIN DEL MODAL-->  
     <div class="secciones">
       <h2 class="seccionAnima">CONTACTO</h2>
     </div>     
       <!-- FORMULARIO -->
       <div class="row">
         <div class="col"></div>
-        <div class="col-lg-5 mb-4">
+        <div class="col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
               <p>Envíenos su consulta.</p>
@@ -87,8 +69,8 @@
               </div>
               <div class="md-form">
                 <i class="fas fa-pencil-alt prefix grey-text"></i>
-                <textarea id="form-text" class="form-control md-textarea" rows="5"></textarea>
-                <label for="form-text"> </label>
+                <textarea id="mensaje" class="form-control md-textarea" rows="5"></textarea>
+                <label for="mensaje"> </label>
               </div>
               <div class="text-center mt-4">
                 <button class="btn btn-outline-primary">ENVIAR</button>
@@ -97,10 +79,9 @@
           </div>
         </div>
       <!----- Fin FORMULARIO  ----->
-      
       <!----          MAPA                     -->
      <div class="col-lg-6">
-        <div id="map-container-google-11" class="z-depth-1-half map-container" style="height: 400px">
+        <div class="z-depth-1-half mapa-google">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0420084737134!2d-56.18813258542409!3d-34.90539528038238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cb68dbab7d%3A0x9eb00cf4d0e29b18!2sAv.%2018%20de%20Julio%201401%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1640285940782!5m2!1ses-419!2suy"
             frameborder="0" style="border:1" allowfullscreen></iframe>
         </div>
