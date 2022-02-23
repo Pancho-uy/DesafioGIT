@@ -39,11 +39,11 @@
   0% {
     transform: translate(0); }
   30% {
-    transform: translate(100vw); }
+    transform: translate(83vw); }
   50% {
     transform: translate(0); }
   75% {
-    transform: translate(100vw); }
+    transform: translate(83vw); }
   100% {
     transform: translate(0); } }
 
