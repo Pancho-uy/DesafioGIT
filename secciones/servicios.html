@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-
   <head> 
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="Francisco Cilbeti">
     <meta name="keywords" content="Impresiones, encuadernaciones, ploteos, escaneado de planos">
     <link rel="stylesheet" href="../bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../css/destino.css"> <!-- ESTILOS COMPILADOS DESDE SASS -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- ESTILOS COMPILADOS DESDE SASS -->
     <title>PrinTo - Servicios</title>
     <meta name="description" content="PrinTo, todos nuestros servicios">
   </head> 
@@ -54,57 +53,58 @@
   <div>
     <img class="img-fluid w-100" src="../img/VP6000_Titan_586x186.png" alt="Titan VP6000">
   </div>
-    <!----------------------------Comienzo de acordeon bootstrap--------------------------->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button id="Impresion" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Impresiones laser de alto volúmen
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Impresiones laser de alto volumen en papel 75gm, formato A4 (210mm x 297mm), hasta
+  <br>
+      <!-- Aca empieza el Acordeon-->
+      <br>
+      <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="servicios1" class="acordeon_opcion" >
+        <label for="servicios1" class="acordeon_etiqueta"> Impresiones laser de alto volúmen</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Impresiones laser de alto volumen en papel 75gm, formato A4 (210mm x 297mm), hasta
             105 ppm simple
             faz. No especializamos en expedientes judiciales, expedientes municipales e impresión notarial.Imprimimos
             hasta un formato maximo de A3 (420mm x 297mm). Impresión de dato variable. Procesamos tambien la informacion.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Digitalización de Planos
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Escaneo de planos hasta 36" (914mm) de ancho por un largo maximo de 3000mm, Color o
+          </p>
+        </section>
+      </section>
+      <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="servicios2" class="acordeon_opcion" >
+        <label for="servicios2" class="acordeon_etiqueta">Digitalización de Planos</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Escaneo de planos hasta 36" (914mm) de ancho por un largo maximo de 3000mm, Color o
             B/N, maxima resolucion 2400dpi. Tambien tenemos a disposicion de nuestros clientes un scanner de 44"
-            (1117mm) de ancho de scaneo con altura regulable, pudiendo escanear originales de hasta 30mm de grosor</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Ploteo de planos CAD
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"> Ploteo de planos CAD (en formato DWG, DWF o PDF), ploteos color en equipos con
+            (1117mm) de ancho de scaneo con altura regulable, pudiendo escanear originales de hasta 30mm de grosor
+          </p>
+        </section>
+      </section>      
+      <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="servicios3" class="acordeon_opcion" >
+        <label for="servicios3" class="acordeon_etiqueta">Ploteo de planos CAD</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Ploteo de planos CAD (en formato DWG, DWF o PDF), ploteos color en equipos con
             tinta a base de agua y pigmentos con una velocidad maxima de 5 A1/minuto, impresiones blanco y negro en
-            equipos tóner con una velocidad maxima de 6 A0/minuto. </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!-------------------------------------------------------------------------------------------->
+            equipos tóner con una velocidad maxima de 6 A0/minuto.
+          </p>
+      </section>        
+    </section>
+    <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="servicios4" class="acordeon_opcion" >
+        <label for="servicios4" class="acordeon_etiqueta">Encuadernaciones</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos">
+            Encuadernados con rulo plástico o metálico en tamaños A3, A4 y A5, tapas de acetato transparente, texturadas o lisas, contratapas en acetaro opaco (negro/azul/verde/amarillo/rojo) Encuadernados con
+            varilla de aluminio para tamaños A0, A1 y A2, tapas y contratapas en acetato transparente.
+          </p>
+        </section>          
+    </section>
+      <br>
+      <br>
+      <br>
+  
+   <!-------------------------------------------------------------------------------------------->
     <footer>
       <div class="container-fluid fondoMio">
         <div class="row fondoMio">

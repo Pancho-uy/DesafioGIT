@@ -6,14 +6,14 @@
       <meta name="keywords" content="Impresiones, encuadernaciones, ploteos, escaneado de planos">
       <meta name="author" content="Francisco Cilbeti">
       <link rel="stylesheet" href="../bootstrap/bootstrap.css">
-      <link rel="stylesheet" href="../css/destino.css"> <!-- ESTILOS COMPILADOS DESDE SASS -->
+      <link rel="stylesheet" href="../css/style.css"> <!-- ESTILOS COMPILADOS DESDE SASS -->
       <title>PrinTo - preguntas freuentes</title>
       <meta name="description" content="PrinTo, Preguntas y Respuestas Frecuentes de nuestros servicios">
       
     <body background="../img/fondo_papel.png"> 
       <div class="container-fluid">
         <!-- Inicio MENU-->
-        <nav class="navbar navbar-expand-lg navbar-dark  fondoMio">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top fondoMio">
           <div class="container-fluid">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-printer-fill" viewBox="0 0 16 16">
               <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
@@ -44,24 +44,6 @@
           </div>
         </nav>
         <!-- Fin MENU-->
-        <!-- Modal de aviso de login-->
-        <div class="modal fade" id="loginmodal" data-bs-backdrop="modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="etiqueta" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="etiqueta">Área de Clientes</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-              </div>
-              <div class="modal-body"> 
-                El ingreso al área de Clientes está en mantenimiento
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- FIN DEL MODAL-->  
         <div class="secciones ">
           <h2 class="seccionAnima">PREGUNTAS FRECUENTES</h2>
         </div>     
@@ -70,69 +52,43 @@
       <br>
       <section class="acordeon">
         <input type="checkbox" name="acordeon-faq" id="faq1" class="acordeon_opcion" >
-        <label for="faq1" class="acordeon_etiqueta">Pregunta 1</label>
+        <label for="faq1" class="acordeon_etiqueta">¿Cómo envío los archivos?</label>
         <section class="acordeon-contenido">
-          <p class="parrafos">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
+          <p class="parrafos"><br>
+            De momento a envíe un mail a impresiones@printo.com.uy, estamos desarrollando una seccion para usuarios
+            registrados en nuestro sitio de modo tal que los archivos se puedan subir directamente desde la pagina
           </p>
         </section>
-    </section>
-    <section class="acordeon">
+      </section>
+      <section class="acordeon">
         <input type="checkbox" name="acordeon-faq" id="faq2" class="acordeon_opcion" >
-        <label for="faq2" class="acordeon_etiqueta">Pregunta 2</label>
+        <label for="faq2" class="acordeon_etiqueta">Digitalización de Planos</label>
         <section class="acordeon-contenido">
           <p class="parrafos">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
+            Escaneo de planos hasta 36" (914mm) de ancho por un largo maximo de 3000mm, Color o
+            B/N, maxima resolucion 2400dpi. Tambien tenemos a disposicion de nuestros clientes un scanner de 44"
+            (1117mm) de ancho de scaneo con altura regulable, pudiendo escanear originales de hasta 30mm de grosor
           </p>
         </section>
       </section>      
-    <section class="acordeon">
-      <input type="checkbox" name="acordeon-faq" id="faq3" class="acordeon_opcion" >
-      <label for="faq3" class="acordeon_etiqueta">Pregunta 3</label>
-      <section class="acordeon-contenido">
-        <p class="parrafos">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-          explicabo ipsa hic, quaerat alias?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-          explicabo ipsa hic, quaerat alias?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-          Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-          explicabo ipsa hic, quaerat alias?
-        </p>
+      <section class="acordeon">
+        <input type="checkbox" name="acordeon-faq" id="faq3" class="acordeon_opcion" >
+        <label for="faq3" class="acordeon_etiqueta">Ploteo de planos CAD</label>
+        <section class="acordeon-contenido">
+          <p class="parrafos"> <br>
+            Ploteo de planos CAD (en formato DWG, DWF o PDF), ploteos color en equipos con
+            tinta a base de agua y pigmentos con una velocidad maxima de 5 A1/minuto, impresiones blanco y negro en
+            equipos tóner con una velocidad maxima de 6 A0/minuto.
+          </p>
       </section>        
     </section>
     <section class="acordeon">
         <input type="checkbox" name="acordeon-faq" id="faq4" class="acordeon_opcion" >
-        <label for="faq4" class="acordeon_etiqueta">Pregunta 4</label>
+        <label for="faq4" class="acordeon_etiqueta">Encuadernaciones</label>
         <section class="acordeon-contenido">
           <p class="parrafos">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis magni error. 
-            Labore illo neque omnis! In quia suscipit, nihil, voluptas inventore at corrupti quam 
-            explicabo ipsa hic, quaerat alias?
+            Encuadernados con rulo plástico o metálico en tamaños A3, A4 y A5, tapas de acetato transparente, texturadas o lisas, contratapas en acetaro opaco (negro/azul/verde/amarillo/rojo) Encuadernados con
+            varilla de aluminio para tamaños A0, A1 y A2, tapas y contratapas en acetato transparente.
           </p>
         </section>          
     </section>

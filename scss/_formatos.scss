@@ -1,3 +1,16 @@
+/* --Set de FONTS usadas en el proyecto -- */
+
+/* --Para TITULOS-- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* --Para SUB-TITULOS y el MENÚ-- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@900&display=swap');
+
+/* -- Para PARRAFOS -- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/* --Fin de importacion de FONTS -- */
+
 .fondoMio{
     background: $degrade;
   }
@@ -13,4 +26,10 @@
       font-size: 1.25rem;
   }
 
-  
+  .parrafos
+  {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: larger;
+    padding: 0.5%;
+  }

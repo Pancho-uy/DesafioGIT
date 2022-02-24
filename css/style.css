@@ -1,6 +1,13 @@
-/* hola, esto es una prueba a ver si el nodemon y watch-css funcionan */
-/* Importo de los partials el proyecto */
-/* Aca se iran agregando las variables del proyecto a lo largo de su evolucion */
+@charset "UTF-8";
+/* --Set de FONTS usadas en el proyecto -- */
+/* --Para TITULOS-- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+/* --Para SUB-TITULOS y el MENÚ-- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@900&display=swap");
+/* -- Para PARRAFOS -- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+/* --Fin de importacion de FONTS -- */
+
 .fondoMio {
   background: linear-gradient(to right, #000046, #1cb5e0); }
 
@@ -13,6 +20,12 @@
   color: black;
   text-decoration: none;
   font-size: 1.25rem; }
+
+.parrafos {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: larger;
+  padding: 0.5%; }
 
 /* Animacion */
 .seccionAnima {
@@ -39,11 +52,11 @@
   0% {
     transform: translate(0); }
   30% {
-    transform: translate(83vw); }
+    transform: translate(100vw); }
   50% {
     transform: translate(0); }
   75% {
-    transform: translate(83vw); }
+    transform: translate(100vw); }
   100% {
     transform: translate(0); } }
 
@@ -122,20 +135,17 @@
   .acordeon_opcion:checked ~ .acordeon_etiqueta::after {
     transform: translateY(-50%) rotate(0.5turn); }
 
+/* CLASES PARA EL MAP DE CONTACTO */
+.mapa-google {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+  .mapa-google iframe {
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    position: absolute; }
+
 /* */
-
-/* CLASES PARA EL MAPA DE CONTACTO */
-
-.mapa-google{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-  }
-  .mapa-google iframe{
-  left:0;
-  top:0;
-  height:80%;
-  width:80%;
-  position:absolute;
-  }
