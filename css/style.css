@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Importo de los partials el proyecto */
+/* El Resto se reolvió con BootStrap */
 /* Aca se iran agregando las variables del proyecto a lo largo de su evolucion */
 /* --Set de FONTS usadas en el proyecto -- */
 /* --Para TITULOS-- */
@@ -156,4 +157,4 @@
     width: 80%;
     position: absolute; }
 
-/* */
+/*        */
