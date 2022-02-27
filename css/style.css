@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* hola, esto es una prueba a ver si el nodemon y watch-css funcionan */
 /* Importo de los partials el proyecto */
 /* Aca se iran agregando las variables del proyecto a lo largo de su evolucion */
 /* --Set de FONTS usadas en el proyecto -- */
@@ -14,14 +13,16 @@
   background: linear-gradient(to right, #000046, #1cb5e0); }
 
 .LinkBlanco {
-  color: white;
   text-decoration: none;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; }
 
 .LinkNegro {
-  color: black;
   text-decoration: none;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff; }
 
 .parrafos {
   display: block;
@@ -43,7 +44,7 @@
 
 @keyframes seccion {
   from {
-    transform: translateX(-12%);
+    transform: translateX(-15%);
     opacity: 0; }
   to {
     transform: translateX(0);
