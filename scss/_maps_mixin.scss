@@ -1,6 +1,6 @@
 // Map y Mixin para la entrega SASS + SEO
 
-/* Implementacion con Mixin acordeon FAQ */ 
+// Implementacion con Mixin acordeon FAQ 
 
 @mixin areaAcordeon ($gridarea){
     grid-area: $gridarea
@@ -38,9 +38,7 @@ transition: background $tranFondo;
   }
 }
 
-/*                                               */
-/* MAP PARA LOS COLORES DE LAS RRSS EN EL FOOTER */
-/*                                               */
+// MAP PARA LOS COLORES DE LAS RRSS EN EL FOOTER 
 
 $rs-colores: (
     twitter:   $colorTwitter,
@@ -55,9 +53,3 @@ $rs-colores: (
     font-size: 1.25rem;
   }
 }
-
-
-
-
-
-
